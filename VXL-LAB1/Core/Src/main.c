@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ex5.h"
+#include "ex6.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -94,12 +94,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  if (counter >= 10) {
-		  counter = 0;
-	  }
-	  Exercise3_Run(counter);
-	  Exercise5_Run(counter);
-	  counter++;
+	  if (counter > 12) counter = 1;
+	  Exercise6_Run(counter++);
 	  HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
