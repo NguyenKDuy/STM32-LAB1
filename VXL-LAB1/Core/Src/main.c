@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ex7.h"
+#include "ex8.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -86,7 +86,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-
+  clearAllClock();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -94,13 +94,11 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  if (counter <= 1) {
+	  if (counter > 11) {
+		  counter = 0;
 		  clearAllClock();
 	  }
-	  Exercise6_Run(counter++);
-	  if (counter > 12) {
-	  		  counter = 0;
-	  }
+	  setNumberOnClock(counter++);
 	  HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
