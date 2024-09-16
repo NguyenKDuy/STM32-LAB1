@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ex8.h"
+#include "ex9.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,10 +96,10 @@ int main(void)
     /* USER CODE END WHILE */
 	  if (counter > 11) {
 		  counter = 0;
-		  clearAllClock();
 	  }
 	  setNumberOnClock(counter++);
 	  HAL_Delay(1000);
+	  clearNumberOnClock(counter-1);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
