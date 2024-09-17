@@ -99,4 +99,26 @@ void  clearNumberOnClock(int num) {
 					break;
 		}
 }
+void Exercise10_Run(int *h, int *m, int *s) {
+	clearNumberOnClock((*s-1)/5);
+	if (*s >= 60) {
+		*s = 0;
+		clearNumberOnClock(*m/5);
+		(*m)++;
+	}
+	if (*m >= 60) {
+		*m = 0;
+		clearNumberOnClock(*h);
+		(*h)++;
+	}
+	if (*h >= 12) {
+		*h = 0;
+	}
+	setNumberOnClock(*h);
+	setNumberOnClock(*m/5);
+	setNumberOnClock(*s/5);
+	(*s)++;
+	//Delay
+}
+
 

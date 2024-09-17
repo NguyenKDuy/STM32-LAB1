@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ex9.h"
+#include "ex10.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -64,7 +64,9 @@ static void MX_GPIO_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	int counter = 0;
+	int h = 0;
+	int m = 0;
+	int s = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -94,12 +96,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  if (counter > 11) {
-		  counter = 0;
-	  }
-	  setNumberOnClock(counter++);
-	  HAL_Delay(1000);
-	  clearNumberOnClock(counter-1);
+	  Exercise10_Run(&h,&m,&s);
+	  HAL_Delay(10);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
