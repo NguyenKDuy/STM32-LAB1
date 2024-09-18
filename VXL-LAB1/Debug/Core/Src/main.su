@@ -1,7 +1,9 @@
 ex5.h:2:6:Exercise3_Run	16	static
 ex5.h:78:6:display7SEG	16	static
-ex5.h:182:6:Exercise5_Run	16	static
+ex5.h:182:6:display2nd_7SEG	16	static
+ex5.h:286:6:Exercise5_Run	16	static
+ex5.h:297:6:Exercise5_Run_2nd_7Led	16	static
 main.c:64:5:main	16	static
-main.c:113:6:SystemClock_Config	72	static
-main.c:149:13:MX_GPIO_Init	32	static
-main.c:202:6:Error_Handler	4	static,ignoring_inline_asm
+main.c:114:6:SystemClock_Config	72	static
+main.c:150:13:MX_GPIO_Init	32	static
+main.c:206:6:Error_Handler	4	static,ignoring_inline_asm
